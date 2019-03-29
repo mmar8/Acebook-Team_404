@@ -1,4 +1,46 @@
-# AceBook
+<h1 align="center">Ace Book: Team 404</h1>
+<p align="center">
+
+<div align="center">    
+  
+[Description ](#description) | 
+[Installation ](#installation) | 
+[Testing ](#testing) | 
+[Contributions ](#contributions) | 
+[Deployment ](#deployment) | 
+[App ](#app) |
+[Material ](#material)
+
+</div>
+
+## Description
+
+The purpose of this project was two fold, to reproduce the functionality of a social network, using Rails and CI, and to work in teams using Agile practices. 
+
+### The Technical Challenge
+
+The application was to mirror the functionality of the popular social media site, Facebook. The project was to be written in Ruby using the Rails framework.  and 
+The applications involved in this development:
+* Rails
+* Devise was to be used to manage the user authentication
+* Travis
+* Heruko
+* GitHub - was used to 
+
+#### Rails 
+This is a framework for writing Ruby programs. Rails promotes the concept that models, views, and controllers should be kept separate by storing the code for each element as separate files in separate directories. Installing Rails sets up the directory structure and provides ActiveRecord 
+
+## Installation
+
+## Testing
+
+la la la
+
+## Contributions
+
+See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+## Deployment
 
 REQUIRED INSTRUCTIONS:
 
@@ -8,19 +50,8 @@ the below**
 [You can find the engineering project outline here.](https://github.com/makersacademy/course/tree/master/engineering_projects/rails)
 
 2. The card wall is here: <please update>
+  
+## App
 
-## How to contribute to this project
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+## Material
 
-## Quickstart
-
-First, clone this repository. Then:
-
-```bash
-> bundle install
-> bin/rails db:create
-> bin/rails db:migrate
-
-> bundle exec rspec # Run the tests to ensure it works
-> bin/rails server # Start the server at localhost:3000
-```
