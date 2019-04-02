@@ -1,4 +1,4 @@
-<a href="/posts/new" class="waves-effect waves-light btn", style= margin-top: 30px>New post</a>
+<a href="/posts/new" class="waves-effect waves-light btn" style="margin-top: 30px";>New post</a>
 
 <% @posts.each do |post| %>
   <div class="row">
@@ -7,6 +7,7 @@
           <div class="card-content white-text">
             <!-- <span class="card-title">Card Title</span> -->
             <p><%= post.message %></p>
+            <p><%= post.created_at %></p>
           </div>
           <div class="card-action">
             <%= link_to "Delete", post_path(post), method: :delete %>
