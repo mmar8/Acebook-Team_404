@@ -12,6 +12,14 @@ RSpec.feature 'Posts have like functionality', type: :feature do
     click_link 'New post'
     fill_in 'Message', with: 'Testing like button exists'
     click_button 'Post'
-    expect(page).to have_selector(:link_or_button, 'LIKE')
+    expect(page).to have_selector(:link_or_button, 'LIKE:')
+  end
+
+  scenario 'all posts will show like count' do
+    create_user
+    click_link 'New post'
+    fill_in 'Message', with: 'Testing like button count is shown'
+    click_button 'Post'
+    expect(page).to have_selector(:link_or_button, 'LIKE: 0')
   end
 end
