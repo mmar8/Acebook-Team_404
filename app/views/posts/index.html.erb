@@ -10,7 +10,7 @@
             <div class="chip">
               <%= post.created_at.strftime("%H:%M, %B %Y") %>
             </div>
-            <p><br><%= p simple_format(linebreak(post.message))%></p>
+            <p><br><%= simple_format(linebreak(post.message))%></p>
           </div>
           <div class="card-action orange-text text-lighten-1" style: >
             <% if current_user.id == post.user_id %>
@@ -24,3 +24,11 @@
       </div>
     </div>
 <% end %>
+<footer class="page-footer blue-grey darken-1">
+         <div class="footer-copyright orange-text text-lighten-1">
+           <div class="container ">
+             © Brought to you by Team 404
+             <a class="orange-text text-lighten-1 right" href="https://github.com/mmar8/acebook-Team_404">Github</a>
+           </div>
+         </div>
+       </footer>
