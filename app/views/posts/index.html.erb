@@ -12,7 +12,7 @@
             </div>
             <p><br><%= p simple_format(linebreak(post.message))%></p>
           </div>
-          <div class="card-action" style: >
+          <div class="card-action orange-text text-lighten-1" style: >
             <% if current_user.id == post.user_id %>
               <%= link_to "Delete", post_path(post), method: :delete %>
               <% if post.created_at + 10.minutes > Time.now %>

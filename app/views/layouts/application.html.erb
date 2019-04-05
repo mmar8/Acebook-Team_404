@@ -10,12 +10,12 @@
 
   <body>
     <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo" style="margin-left: 5%">Acebook</a>
+    <div class="nav-wrapper blue-grey darken-1">
+      <a href="#" class="brand-logo orange-text text-lighten-1" style="margin-left: 3%">Acebook</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <% if user_signed_in? %>
-        <li><a href="/users/edit">Edit Profile</a></li>
-        <li><a data-method="delete" href="/users/sign_out" >Logout</a></li>
+        <li><a href="/users/edit" class="orange-text text-lighten-1">Edit Profile</a></li>
+        <li><a data-method="delete" href="/users/sign_out" class="orange-text text-lighten-1">Logout</a></li>
         <% else %>
         <li><a href="/users/sign_in">Login</a></li>
         <li><a href="/users/sign_up">Sign-up</a></li>
@@ -26,7 +26,7 @@
 
   <% if notice %>
     <p class="alert alert-success"><script>M.toast({html: "You are logged in as: ", classes: 'blue rounded', displayLength:2000});</script></p><% end %>
-  <% if alert %>	 
+  <% if alert %>
     <p class="alert alert-danger"><script>M.toast({html: "Incorrect Username or Password", classes: 'red rounded', displayLength:2000});</script></p>
   <% end %>
   <%= yield %>
