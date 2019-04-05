@@ -4,17 +4,18 @@
       <div class="col s12 m6">
         <div class="card blue-grey darken-1">
           <div class="card-content white-text">
-            <!-- <span class="card-title">Card Title</span> -->
             <div class="chip">
               <%= post.user.username %>
-              <%= post.created_at.strftime("on %H:%M, %B %Y") %>
             </div>
-            <p><%= p simple_format(linebreak(post.message))%></p>
+            <div class="chip">
+              <%= post.created_at.strftime("%H:%M, %B %Y") %>
+            </div>
+            <p><br><%= p simple_format(linebreak(post.message))%></p>
           </div>
           <div class="card-action" style: >
             <% if current_user.id == post.user_id %>
               <%= link_to "Delete", post_path(post), method: :delete %>
-              <% if post.created_at + 10.minutes > Time.now %> 
+              <% if post.created_at + 10.minutes > Time.now %>
                 <%= link_to "Update", edit_post_path(post) %>
               <%end%>
             <%end%>
