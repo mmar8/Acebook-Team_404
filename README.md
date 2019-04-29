@@ -94,6 +94,9 @@ This is a framework that speeds up the styling of the views in CSS by providing 
 
 The purpose of `Agile` practices is to make the development process more effective and more responsive to changes. There is a pattern of communication methods, planning and development cycles and interaction with the client that enables fast paced. Each morning we have a `Standup`, this is a quick meeting to go over where we are and what everyone plans to do today. At the end of the day we have a `Retro` which covers what we achieved, what problems we had and a rough plan for the next day. We have 2 day `Sprints` covering the planning and modelling in the first day and the coding once we have agreed on a model and plan. We regularly commit from separate branches and Travis carries out a comprehensive test using our test suites before committing a working, fully tested URL for the client to see and comment on.
 
+## App
+https://acebook-team-404.herokuapp.com
+
 ## Installation
  - Clone this repository to your machine
  - `cd` to project root in console
@@ -109,6 +112,3 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Deployment
  - Continuous deployment and integration through Travis and Heroku
-
-## App
-https://acebook-team-404.herokuapp.com
